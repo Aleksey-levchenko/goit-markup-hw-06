@@ -52,10 +52,28 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn" type="button" data-menu-open>
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close" data-menu-close>Close</button>
+          <nav class="mobile-menu-nav">Navigation</nav>
+          <address>Adress</address>
+          <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
-      <section class="main-hero">
+      <section class="main-hero hidden">
         <div class="container">
           <h1 class="main-hero-tittle">
             Effective Solutions for Your Business
@@ -63,7 +81,7 @@
           <button type="button" class="main-hero-btn">Order Service</button>
         </div>
       </section>
-      <section class="hero">
+      <section class="hero hidden">
         <div class="container">
           <h2 class="visually-hidden">Requirements</h2>
           <ul class="hero-list">
@@ -118,7 +136,7 @@
           </ul>
         </div>
       </section>
-      <section class="team">
+      <section class="team hidden">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
@@ -361,7 +379,7 @@
           </ul>
         </div>
       </section>
-      <section class="portfolio">
+      <section class="portfolio hidden">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolit-list">
@@ -489,7 +507,7 @@
         </div>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer hidden">
       <div class="container footer-container">
         <div class="footer-chart-start">
           <a class="header-logo footer-logo-class" href="./index.html"
@@ -572,7 +590,7 @@
       </div>
     </footer>
     <!-- backdrop -->
-    <div class="backdrop is-open">
+    <div class="backdrop is-open hidden">
       <div class="modal">
         <button type="button" class="modal-open-btn">
           <svg class="backdrop-exit-icon" width="8" height="8">
@@ -655,5 +673,6 @@
         </form>
       </div>
     </div>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
